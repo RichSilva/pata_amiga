@@ -3,11 +3,13 @@ import Utils from "./services/Utils";
 import Home from './views/pages/Home';
 import Dogs from './views/pages/Dogs';
 import Cats from './views/pages/Cats';
+import Contact from './views/pages/Contact';
 
 let routes = {
     '/': Home,
     '/dogs': Dogs,
-    '/cats': Cats
+    '/cats': Cats,
+    '/contact': Contact
 }
 
 const router = async () => {

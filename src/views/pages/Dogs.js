@@ -1,5 +1,3 @@
-
-
 let Dogs = {
     render: async () => {
         let view = `

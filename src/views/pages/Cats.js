@@ -1,5 +1,3 @@
-
-
 let Cats = {
     render: async () => {
         let view = `
