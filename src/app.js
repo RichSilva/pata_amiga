@@ -1,9 +1,13 @@
 import Utils from "./services/Utils";
 
-import Home from './views/pages/Home'
+import Home from './views/pages/Home';
+import Dogs from './views/pages/Dogs';
+import Cats from './views/pages/Cats';
 
 let routes = {
     '/': Home,
+    '/dogs': Dogs,
+    '/cats': Cats
 }
 
 const router = async () => {

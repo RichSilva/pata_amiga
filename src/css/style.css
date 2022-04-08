@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, strong {
+h1, h2, h3, h4, h5, h6, p, span, strong, a, li {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -59,18 +59,19 @@ header, footer {
     height: 200px;
 }
 
-.dogs button, .cats button {
+.dogs a, .cats a {
+    text-decoration: none;
+    text-align-last: center;
     width: 150px;
     padding: 10px;
     font-weight: bolder;
     color: #fff;
     background-color: #5c5c5c;
-    border: none;
     border-radius: 10px;
     transition: 300ms;
 }
 
-.dogs button:hover, .cats button:hover {
+.dogs a:hover, .cats a:hover {
     background-color: #333;
 }
 
@@ -98,6 +99,63 @@ header, footer {
     border-radius: 20px;
     list-style: none;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+/*
+    FINAL DA ESTILIZAÇÃO HOME 
+
+    INICIO DA ESTILIZAÇÃO DOGS E CATS
+*/
+
+.dog-header, .cat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 20px;
+}
+
+.dog-header a, .cat-header a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dog-header a:hover, .cat-header a:hover {
+    text-decoration: underline;
+}
+
+.dog-container, .cat-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+
+.dog-wrapper img, .cat-wrapper img {
+    width: 200px;
+    height: 200px;
+}
+
+.dog-wrapper .info, .cat-wrapper .info {
+    padding: 10px 0;
+}
+
+.dog-wrapper .button, .cat-wrapper .button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dog-wrapper .button a, .cat-wrapper .button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #8c528c;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.dog-wrapper .button a:hover, .cat-wrapper .button a:hover {
+    border: 2px solid #000;
 }

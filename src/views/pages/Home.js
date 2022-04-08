@@ -11,12 +11,12 @@ let Home = {
                 <div class="animals">
                     <div class="dogs">
                         <img src="${Cachorros}" alt="cachorros" />
-                        <button>Quero adotar</button>
+                        <a href="/#/dogs">Quero adotar</a>
                     </div>
                     <div class="line"></div>
                     <div class="cats">
                         <img src="${Gatos}" alt="gatos" />
-                        <button>Quero adotar</button>
+                        <a href="/#/cats">Quero adotar</a>
                     </div>
                 </div>
             </div>
